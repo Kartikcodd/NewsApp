@@ -1,0 +1,22 @@
+<!-- <p>technews works!</p> -->
+
+<h5 class="mt-5 mb-2"> Tech News </h5>
+<div class="container-fl mt-5">
+
+    <div class="row">
+    
+        <div  *ngFor="let item of techData " class="col-lg-3 mt-3 mb-3    ">
+           
+            <div class="box">
+                <img src="{{item.urlToImage}}" width="100%" alt="" srcset="">
+            <h5 class="mt-2 mb-2">{{item.title}}</h5>
+            <!-- <p >{{item.content}}</p> -->
+            <button class="btn" color="primary">
+                <a href="{{item.url}}" class="btn btn-dark btn-sm mt-5">Read More</a>
+            </button>
+            
+            </div>
+        </div>
+    </div>
+    
+    </div>
